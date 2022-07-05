@@ -1,0 +1,23 @@
+spring:
+
+  datasource:
+    url: jdbc:h2:file:./omdbapi_client_db
+    driverClassName: org.h2.Driver
+    username: sa
+    password: sa
+  jpa.database-platform: org.hibernate.dialect.H2Dialect
+
+  jpa.hibernate.ddl-auto: update
+
+#server.port: 8791
+
+omdbapiclient:
+  host: https://www.omdbapi.com
+  apikey: 88bf8909
+
+logging:
+  level:
+    com:
+      skulis:
+        andrejus:
+          omdbapiclient: DEBUG
